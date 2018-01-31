@@ -36,7 +36,7 @@ openblas-src = { git = "https://github.com/ekiden/openblas-src", default_feature
 
 matrixmultiply = { git = "https://github.com/ekiden/rust-sgx-sdk" }
 # Use via the `serde-1` crate feature!
-serde = { git = "https://github.com/ekiden/serde", optional = true }
+serde-sgx = { git = "https://github.com/ekiden/serde", optional = true }
 
 [dev-dependencies]
 defmac = "0.1"
@@ -48,7 +48,7 @@ rawpointer = "0.1"
 blas = ["cblas-sys", "openblas-src"]
 
 # Serde 1.0
-serde-1 = ["serde"]
+serde-1 = ["serde-sgx"]
 
 # These features are used for testing
 test-blas-openblas-sys = ["blas"]
