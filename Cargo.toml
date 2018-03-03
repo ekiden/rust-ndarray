@@ -35,7 +35,7 @@ blas-src = { version = "0.1.2", optional = true, default-features = false }
 
 matrixmultiply = { version = "0.1.13" }
 # Use via the `serde-1` crate feature!
-serde = { version = "1.0", optional = true }
+serde = { git = "https://github.com/ekiden/serde", optional = true }
 
 [dev-dependencies]
 defmac = "0.1"
